@@ -31,6 +31,15 @@
           <li class="nav-item">
             <a class="nav-link" href="#liveNow">Live Now</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#topComments">Comment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#generalStats">Stats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Footer</a>
+          </li>
         </ul>
         <div class="d-flex align-items-center">
           <button class="btn btn-outline-primary btn-sm me-2">
