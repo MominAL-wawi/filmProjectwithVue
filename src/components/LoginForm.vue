@@ -186,7 +186,7 @@ export default {
 
         setTimeout(() => {
           this.$emit("login-success");
-        }, 2000);
+        }, 0);
       } catch (error) {
         this.errorMessage = error.message || "Invalid username or password";
       } finally {
