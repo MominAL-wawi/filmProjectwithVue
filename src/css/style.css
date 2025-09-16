@@ -1,0 +1,614 @@
+/* Import the CSS styles from the attached files */
+:root {
+  --primary-color: #000033;
+  --secondary-color: #312f4e;
+  --accent-color: #4169e1;
+  --text-light: #ffffff;
+  --text-muted: #a0a0a0;
+  --border-radius: 15px;
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+/* Login specific styles */
+.login-bg {
+  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+  min-height: 100vh;
+}
+
+.login-card {
+  background: #374151;
+  border: 1px solid #6b7280;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.profile-image {
+  border: 3px solid #3b82f6;
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+.form-input {
+  background: #374151;
+  border: 2px solid #6b7280;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  outline: none;
+  background: #374151;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background: #3b82f6;
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+.error-message {
+  background: #ef4444;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.success-message {
+  background: #10b981;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.logo-section {
+  background: linear-gradient(45deg, #3b82f6, #3b82f6);
+  border-radius: 0.5rem;
+}
+
+.input-group-text {
+  background: #374151;
+  border-color: #6b7280;
+  color: #9ca3af;
+}
+
+/* Dashboard styles will be added here */
+/* You can import the full CSS from the attached files */
+
+/* Navigation Styles */
+#nav {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand .span1 {
+  color: var(--accent-color);
+}
+
+.nav-link {
+  color: var(--text-light) !important;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  padding: 2rem 0;
+}
+
+.search-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-light);
+  padding: 1rem 3rem 1rem 1rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.search-input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--accent-color);
+  color: var(--text-light);
+  box-shadow: 0 0 0 3px rgba(65, 105, 225, 0.2);
+}
+
+.search-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+}
+
+.hero-container {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.hero-content {
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Section Styles */
+.section-title {
+  color: var(--text-light);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Category Cards */
+.category-card {
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: var(--transition);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.category-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.category-overlay {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  padding: 1rem;
+  text-align: center;
+}
+
+.category-title {
+  color: var(--text-light);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.category-count {
+  background: var(--accent-color) !important;
+}
+
+/* Movie Cards */
+.movie-card {
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-image-container {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.movie-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.movie-card:hover .movie-image {
+  transform: scale(1.05);
+}
+
+.movie-rating {
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--text-light);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.movie-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.movie-genre {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Live Now Section */
+.live-card {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.live-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.live-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.live-badge {
+  top: 0.5rem;
+  left: 0.5rem;
+  background: #dc3545;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.viewers-count {
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+}
+
+.live-info {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.channel-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.live-text h6 {
+  color: var(--text-light);
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.live-text p {
+  color: var(--text-muted);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Pricing Cards */
+.pricing-card {
+  background: var(--secondary-color);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  transition: var(--transition);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.pricing-card.featured {
+  border-color: var(--accent-color);
+  background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+}
+
+.plan-name {
+  color: var(--text-light);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.plan-description {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.plan-price {
+  color: var(--accent-color);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Comments Section */
+.add-comment-section {
+  background: var(--secondary-color);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.comment-item {
+  background: var(--secondary-color);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.comment-content {
+  flex: 1;
+}
+
+.comment-text {
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.comment-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Stats Section */
+.stats-bars {
+  background: var(--secondary-color);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+}
+
+.stat-item h5 {
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar-container {
+  background: rgba(255, 255, 255, 0.1);
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+.social-stats {
+  background: var(--secondary-color);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+}
+
+.social-stats li {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer-section {
+  background: var(--primary-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-brand {
+  color: var(--text-light);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-description {
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.social-icons i {
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.social-icons i:hover {
+  color: var(--accent-color);
+}
+
+.footer-title {
+  color: var(--text-light);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--accent-color);
+}
+
+/* Movie Detail Page */
+.movie-detail-view {
+  background: var(--primary-color);
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.movie-poster {
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.movie-details {
+  color: var(--text-light);
+}
+
+.movie-details .movie-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.movie-meta .badge {
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.rating-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.movie-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 1.5rem 0;
+}
+
+.movie-actions .btn {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .movie-details .movie-title {
+    font-size: 2rem;
+  }
+}
+
+/* Dark theme enhancements */
+body {
+  background: var(--primary-color);
+}
+
+.category-section,
+.movies-section,
+.tv-shows-section,
+.live-now-section,
+.pricing-section,
+.comments-section,
+.stats-section {
+  background: var(--primary-color);
+  padding: 3rem 0;
+}
+
+/* Button enhancements */
+.btn-outline-primary {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.btn-outline-primary:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
+}
+
+.btn-outline-light:hover {
+  background: white;
+  color: var(--primary-color);
+}
