@@ -43,7 +43,7 @@ export default createStore({
         localStorage.setItem("arabflex_user", JSON.stringify(user));
         return Promise.resolve(user);
       } else {
-        return Promise.reject(new Error("Invalid.. username:momen & password:1234"));
+        return Promise.reject(new Error("username:momen & password:1234"));
       }
     },
     logout({ commit }) {
